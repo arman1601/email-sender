@@ -22,3 +22,10 @@ pip install smtplib openpyxl python-docx
 Configure SMTP settings (e.g., Yandex, Gmail) in your email provider settings.
 
 Ensure Excel and Word template files are correctly formatted.
+
+Prerequisites 
+
+The Email column in the Excel file is mandatory. The script will not send emails if this column is missing.
+The Excel file can contain multiple variables (e.g., Data1, Data2, Data3, etc.).
+For optimal performance, we recommend not exceeding 15 variables in the Excel file.
+All variable names must start with "Data" (e.g., Data1, Data2, Data3), ensuring correct replacement in the Word template.
